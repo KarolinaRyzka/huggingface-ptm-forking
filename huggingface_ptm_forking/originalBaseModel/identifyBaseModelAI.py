@@ -3,8 +3,9 @@ import openai
 from huggingface_hub import HfApi, list_models, ModelCard
 import time
 import formatData
-from Collections import Counter
 import argparse
+import pathlib
+from pathlib import Path
 import os
 import tokenizer
 import json
@@ -16,7 +17,7 @@ TIMEOUTERROR = 0;
 
 
 parser = argparse.ArgumentParser(description="Pipeline for identifying base models from HF model cards")
-parser.add_argument("--name", choices=["nameAndModel"], required=True, help="user and model name required")
+parser.add_argument("--directoryPath", type=Path, required=True, help="user and model name required")
 args = parser.parse_args()
 
 hfAPI = HfApi(
@@ -86,7 +87,7 @@ async def getBaseModel(chatlog):
 
 retryCount = 0
 
-rootDirectory = " "
+rootDirectory: Path = "/Users/karolinaryzka/Documents/huggingface-ptm-forking/huggingface-ptm-forking/huggingface_ptm_forking/originalBaseModel/Dataset"
 results = {}
 
 for user, dirs, files in os.walk(rootDirectory):

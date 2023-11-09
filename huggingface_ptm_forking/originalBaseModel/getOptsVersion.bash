@@ -2,13 +2,17 @@
 
 modelName=""
 
-while getopts "m:" opt; do
+while getopts ":d:" opt; do
     case $opt in
-        m)
-        modelName="$OPTARG"
+        d)
+        directory="$OPTARG"
         ;;
         \?)
-        echo "Invalid option: -$OPTARG" >&1
+        echo "Invalid option: -$OPTARG" >&2
+        exit 1
+        ;;
+        :)
+        echo "Option -$OPTARG requires an argument." >&2
         exit 1
         ;;
     esac
