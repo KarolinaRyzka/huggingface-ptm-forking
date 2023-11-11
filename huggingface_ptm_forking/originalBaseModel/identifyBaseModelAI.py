@@ -10,7 +10,7 @@ import os
 import tokenizer
 import json
 import asyncio
-import keys
+import huggingface_ptm_forking.originalBaseModel.keys as keys
 
 startTime = time.time()
 TIMEOUTERROR = 0;
