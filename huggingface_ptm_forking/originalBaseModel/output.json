@@ -1,1 +1,12 @@
-{}
+{
+  "aaparajit02/space-nebula": "dreambooth-hackathon",
+  "aambrioso/distilbert-base-uncased-finetuned-emotion": "distilbert-base-uncased",
+  "aammari/setfit-zero-shot-classification-pbsp-p3-sev": "setfit",
+  "aammari/setfit-zero-shot-classification-pbsp-p3-freq": "null",
+  "aammari/setfit-zero-shot-classification-pbsp-p3-trig": "null",
+  "aammari/setfit-zero-shot-classification-pbsp-p3-dur": "null",
+  "aammari/setfit-zero-shot-classification-pbsp-p3-func": "null",
+  "aammari/setfit-zero-shot-classification-pbsp-p3-cons": "null",
+  "aammari/setfit-zero-shot-classification-pbsp-p3-bhvr": "null",
+  "aammari/setfit-zero-shot-classification-pbsp-p1": "null"
+}
