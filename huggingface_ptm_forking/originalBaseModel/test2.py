@@ -34,7 +34,7 @@ def traverse_directory(rootDirectory, outputFile):
                 with open(filePath, 'r') as file:
                     fileContents = file.read()
                 result = getLink(fileContents)
-                results[file] = result
+                results[folderName] = result
                 
     
     #place result in json file
@@ -50,7 +50,7 @@ def main():
     rootDirectory = "/Users/karolinaryzka/Documents/huggingface-ptm-forking/huggingface-ptm-forking/huggingface_ptm_forking/originalBaseModel/Dataset"
     outputFile = "output.json"
     traverse_directory(rootDirectory, outputFile)
-    
+
 
 if __name__ == "__main__":
 
