@@ -112,7 +112,6 @@ def main()-> None:
             print(model)
             card = getModelCard(model)
             print(card)
-            break
             if file.lower() == 'readme.md':
                 readmePath = os.path.join(user, file)
                 with open(readmePath, 'r') as readmeFile:

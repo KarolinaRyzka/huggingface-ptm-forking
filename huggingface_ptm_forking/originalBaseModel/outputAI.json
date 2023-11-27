@@ -1,0 +1,4 @@
+{
+    "HuggingFaceH4/starchat-beta": "bigcode/starcoderplus",
+    "aambrioso/distilbert-base-uncased-finetuned-emotion": "distilbert-base-uncased"
+}
